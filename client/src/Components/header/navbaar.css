@@ -1,0 +1,205 @@
+header{
+    background-color: #131921;
+    width:100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    z-index:2;
+    width: 100%;
+}
+
+header nav{
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 4;
+}
+
+header nav .navlogo img{
+    width: 110px;
+    margin-top: 10px;
+}
+
+header nav .left{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    /* border: 2px solid red; */
+    flex: .7;
+}
+
+
+
+header nav .left input{
+    width:400px;
+    height: 38px;
+    border: none;
+    outline: none;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+header nav .left .search_icon{
+    background-color: #febd69;
+    height: 38px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+    cursor: pointer;
+}
+
+header nav .nav_searchbaar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* header nav .left input:focus{
+    border: 2px solid #febd69;
+} */
+
+header nav .right{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    /* border: 2px solid red; */
+    flex: .3;
+}
+
+header nav .right .nav_btn a{
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-right: 2px;
+    border: 1px solid #131921;
+    border-radius: 2px;
+    padding: 8px;
+}
+
+
+
+header nav .right .nav_btn a:hover{
+    border: 1px solid white;
+}
+
+header nav .right .cart_btn{
+    display: flex;
+    margin-left: 22px;
+    cursor: pointer;
+    margin-top: 2px;
+    padding: 8px;
+    border-radius: 2px;
+    border: 1px solid #131921;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 3px;
+}
+
+header nav .right .cart_btn:hover{
+    border: 1px solid white;
+}
+
+header nav .right .cart_btn #icon{
+    margin-right: 10px;
+    color: #fff;
+    margin-top: 2px;
+}
+
+header nav .right .cart_btn p{
+    color: #fff;
+    font-weight: 500;
+    font-size: 12px;
+    margin-top: 11px;
+    margin-right: 10px;
+}
+
+.right a{
+    text-decoration: none;
+}
+
+header nav .avtar{
+    cursor: pointer;
+}
+header nav .avtar2{
+    cursor: pointer;
+    background-color: #1365cf;
+}
+
+header .hamburgur{
+    display: none;
+}
+
+header .extrasearch{
+    position: absolute;
+    background-color: #fff;
+    color: #000;
+    top: 50px;
+    width: 440px;
+}
+
+header .extrasearch a{
+    text-decoration: none;
+    color: #000;
+}
+
+/* drawer sty */
+header nav .drawer{
+    width: 250px;
+    background-color: red;
+}
+
+
+@media (max-width:800px){
+    header .hamburgur{
+        display: block;
+    }
+    header nav{
+        overflow: hidden;
+    }
+    header nav .right .nav_btn,
+    header nav .right .avtar2,
+    header nav .right .avtar{
+        display:none;
+    }
+    header nav .left input{
+        width: 150px;
+        margin-left: 10px;
+    }
+
+    header nav .left input::placeholder{
+        visibility: hidden;
+    }
+  
+    header nav .right .cart_btn{
+        margin-right: 0;
+    }
+    
+    
+}
+
+@media (max-width:568px){
+
+    header nav .left input{
+       display: none;
+    }
+    
+    header nav .left .search_icon{
+        /* color: #fff;
+        font-size: 18px;
+        background-color: #131921; */
+        display: none;
+    }
+    header nav .navlogo img{
+        width: 95px;
+        margin-top: 14px;
+        margin-left: 67px;
+    }
+}

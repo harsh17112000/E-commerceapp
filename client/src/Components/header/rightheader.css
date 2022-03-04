@@ -1,0 +1,51 @@
+.rightheader{
+    width: 250px;
+    height: auto;
+}
+
+.rightheader .right_nav{
+    display: flex;
+    align-items: center;
+    background-color: #131921;
+    padding-bottom: 10px;
+}
+
+.rightheader .right_nav h3{
+    margin-left: 10px;
+    margin-top: 20px;
+    font-style: italic;
+    font-weight: 500;
+    color: #fff;
+}
+
+.rightheader .avtar{
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.rightheader .avtar2{
+    cursor: pointer;
+    background-color: #1365cf;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.nav_btn{
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+.nav_btn a{
+    text-decoration: none;
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #131921;
+}
+
+.nav_btn .flag{
+    display: flex;
+    align-items: center;
+}

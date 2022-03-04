@@ -1,0 +1,32 @@
+.new_nav{
+    width: 100%;
+    height: 40px;
+    background-color: #232f3e;
+    position: relative;
+    top: 60px;
+}
+
+.new_nav .nav_data{
+    display: flex;
+    justify-content:space-between;
+}
+
+.new_nav .nav_data .left_data{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex: 1;
+}
+
+.new_nav .nav_data .left_data p{
+    color: #fff;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+/* media query */
+@media (max-width:808px){
+    .new_nav{
+       display: none;
+    }
+}

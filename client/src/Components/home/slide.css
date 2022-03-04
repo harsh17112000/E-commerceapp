@@ -1,0 +1,121 @@
+.home_section .products_section{
+    /* padding: 10px 20px; */
+    width: 98%;
+    margin:10px auto;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.home_section .slide_part{
+    display: flex;
+    align-items: center;
+}
+
+.slide_part .left_slide{
+    width: 80%;
+}
+
+.slide_part .right_slide{
+    width: 20%;
+    height:370px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+
+.center_img img{
+    display: block;
+    /* margin-top: 13px; */
+    width: 80%;
+    margin: 13px auto;
+}
+
+.slide_part .right_slide a{
+    color:#007185;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.slide_part .right_slide img{
+    height:275px;
+    width:90%;
+}
+
+.products_section .products_deal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    padding: 20px;
+}
+
+.products_section .products_deal h3{
+    color: #444;
+    font-weight: 500;
+    font-size: 19px;
+}
+
+.products_section .products_deal .view_btn{
+    padding: 9px 15px;
+    border: none;
+    outline: none;
+    background-color: #2874f0;
+    color: #fff;
+    width: 100px;
+    letter-spacing: 1px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+.products_section a{
+    text-decoration: none;
+    color: #111;
+}
+
+
+.products_section .products_items img{
+    width: 150px;
+    height: 150px;
+    margin-top: 4px;
+}
+
+.products_section .products_items{
+    margin-top: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.products_section .products_items p{
+    font-size: 14px;
+}
+
+
+
+.products_section .products_items p{
+    margin-top: 10px;
+}
+
+@media (max-width:768px){
+    .slide_part .right_slide{
+     display: none;
+    }
+    
+    .slide_part .left_slide{
+        width: 100%;
+    }
+
+    .center_img img{
+        object-fit: cover;
+        height: 120px;
+    }
+}
