@@ -85,7 +85,7 @@ router.post("/login", async (req, res) => {
             if (!isMatch) {
                 res.status(400).json({ error: "invalid crediential pass" });
             } else {
-                res.status(201).json(userlogin);
+                
                 const token = await userlogin.generatAuthtoken();
                 console.log(token);
 
@@ -93,6 +93,7 @@ router.post("/login", async (req, res) => {
                     expires: new Date(Date.now() + 2589000),
                     httpOnly: true
                 });
+                res.status(201).json(userlogin);
             }
 
         } else {
