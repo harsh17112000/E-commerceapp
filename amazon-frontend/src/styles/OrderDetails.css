@@ -1,0 +1,18 @@
+#order-id{
+    margin-left: 20px;
+    margin-bottom: 30px;
+    color: orange;
+}
+
+.order-page-pay-btn{
+    margin-top: 40px;
+}
+
+@media(max-width: 900px){
+    .order-row1{
+        grid-template-columns: 1fr 1fr;
+    }
+    .order-row1 p{
+        grid-column: 1/3;
+    }
+}

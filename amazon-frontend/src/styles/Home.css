@@ -1,0 +1,40 @@
+.home-page-container{
+    max-width: 1600px;
+    margin: auto;
+}
+
+.banner-container{
+    margin-bottom: 40px;
+}
+.banners{
+    height: 26vw;
+}
+
+.banners img{
+    width: 100%;
+    height: 100%;
+}
+
+.home-product-slider{
+  padding: 20px;
+  background-color: rgb(235, 235, 235);
+}
+
+
+.slides .slick-prev,
+.slides .slick-next {
+  top: 50%;
+}
+
+.slick-next{
+  margin-right: 5%;
+}
+
+.slick-prev{
+  margin-left: 5%;
+  z-index: 99;
+}
+
+.slick-slide .product-card{
+  margin: 0 10px;
+}

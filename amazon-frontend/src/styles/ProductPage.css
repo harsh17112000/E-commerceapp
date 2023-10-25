@@ -1,0 +1,107 @@
+.row{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-gap: 40px;
+    margin: 30px 20px;
+}
+
+.back-res{
+    color: grey;
+    margin: 20px;
+}
+
+.col-1{
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid grey;
+    border-radius: 4px;
+}
+
+.col-1 img{
+    width: 80%;
+}
+
+.col-2 ul, .col-3 ul{
+    list-style-type: none;
+}
+
+.pd-name{
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.pd-price{
+    margin-top: 16px;
+    font-size: 24px;
+}
+.pd-desc{
+    margin-top: 14px;
+}
+
+.pd-desc p{
+    color: grey;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+
+.card-body{
+    background-color: rgb(238, 238, 238);
+    padding: 16px;
+    border: 1px solid grey;
+    border-radius: 6px;
+}
+
+.card-body li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.success{
+    color: rgb(0, 168, 76);
+    font-weight: 800;
+}
+.m-success{
+    color: rgba(0, 60, 255, 0.863);
+    font-weight: 800;
+}
+.error{
+    color: rgb(255, 0, 0);
+    font-weight: 800;
+}
+
+
+.qty-select select{
+    padding: 10px 16px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 80px;
+}
+
+
+.card-body .add-to-cart{
+    background-color: #f0c040;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 30px;
+    font-size: 18px;
+    outline: 0;
+}
+
+
+@media(max-width: 900px){
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
+}

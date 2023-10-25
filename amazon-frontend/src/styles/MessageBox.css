@@ -1,0 +1,22 @@
+.danger {
+  color: #a02020;
+}
+.alert {
+  padding: 16px;
+  border: 0.1rem solid transparent;
+  border-radius: 0.5rem;
+  background-color: #ffbebe;
+  margin-top: 16px;
+}
+.alert-info {
+  color: #2020a0;
+  background-color: #e0e0ff;
+}
+.alert-danger {
+  color: #a02020;
+  background-color:#ffbebe;
+}
+.alert-success {
+  color: #109710;
+  background-color: #beff89 !important;
+}
