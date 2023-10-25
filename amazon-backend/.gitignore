@@ -9,3 +9,5 @@
 
 # misc
 .env.local
+
+.env
