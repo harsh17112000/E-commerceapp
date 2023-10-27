@@ -6,7 +6,6 @@ import productRouter from './routers/productRouter.js'
 import dotenv from 'dotenv'
 import orderRouter from './routers/orderRouter.js'
 
-
 dotenv.config();
 
 const app = express()
@@ -19,12 +18,8 @@ mongoose.connect(connection_url,{
     useUnifiedTopology: true
 })
 
-
-
 app.use(express.json());
 app.use(cors());
-
-
 
 app.use("/api/users", userRouter);
 app.use("/api/products", productRouter);
@@ -34,5 +29,4 @@ app.get('/api/config/paypal', (req,res)=>{
 })
 
 // Listening to  server
-
 app.listen(port,()=>console.log(`Listening on local host:${port}`))
