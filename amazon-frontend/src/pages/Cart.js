@@ -74,7 +74,7 @@ const Cart = (props) => {
                                                 }
                                                 </select>
                                             </div>
-                                            <p>${item.price * item.qty}</p>
+                                            <p>₹{item.price * item.qty}</p>
                                             <div className="remove-btn">
                                                 <button type="button" onClick={() => removeProduct(item.product)}>
                                                     <CancelIcon/>
@@ -97,7 +97,7 @@ const Cart = (props) => {
                                         return a + c.qty;
                                     }, 0)} items) : 
                                 </p>
-                                <p className="price">$ {cartItems.reduce((a, c) => a + c.price * c.qty, 0)}</p>
+                                <p className="price">₹ {cartItems.reduce((a, c) => a + c.price * c.qty, 0)}</p>
                             </li>
                             <li>
                                 <button type="button" onClick={checkOut}

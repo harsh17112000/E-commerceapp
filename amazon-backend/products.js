@@ -5,7 +5,7 @@ export const products=[
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
         category: "Laptop",
         brand: "HP",
-        price: 600,
+        price: 600*80,
         rating: 5,
         numRev: 11,
         stock: 16
@@ -16,7 +16,7 @@ export const products=[
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
         category: "Laptop",
         brand: "Lenovo",
-        price: 580,
+        price: 580*80,
         rating: 4.5,
         numRev: 25,
         stock: 20
@@ -27,7 +27,7 @@ export const products=[
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
         category: "Computer Accessories",
         brand: "Redgear",
-        price: 350,
+        price: 350*80,
         rating: 3,
         numRev: 46,
         stock: 2
@@ -38,7 +38,7 @@ export const products=[
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
         category: "Monitor",
         brand: "Samsung",
-        price: 270,
+        price: 270*80,
         rating: 4.5,
         numRev: 17,
         stock: 9
@@ -50,7 +50,7 @@ export const products=[
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
         category: "Mobile & Tablets",
         brand: "Oppo",
-        price: 300,
+        price: 300*80,
         rating: 2,
         numRev: 33,
         stock: 0
@@ -61,7 +61,7 @@ export const products=[
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
         category: "Computer Accessories",
         brand: "HP",
-        price: 120,
+        price: 120*80,
         rating: 4,
         numRev: 20,
         stock: 50
@@ -72,21 +72,18 @@ export const products=[
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
         category: "Earphones",
         brand: "Boat",
-        price: 90,
+        price: 90*80,
         rating: 5,
         numRev: 14,
         stock: 4
     },
-
-
-
     {
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdOnc-l4LAoW_xfugMRR9iUj_6tH4sKpcDgg&usqp=CAU",
         name: "Apple Mouse",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
         category: "Computer Accessories",
         brand: "Apple",
-        price: 500,
+        price: 500*80,
         rating: 5,
         numRev: 180,
         stock: 80
@@ -97,7 +94,7 @@ export const products=[
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
         category: "Monitor",
         brand: "LG",
-        price: 320,
+        price: 320*80,
         rating: 4.0,
         numRev: 60,
         stock: 14
@@ -108,7 +105,7 @@ export const products=[
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
         category: "Earphones",
         brand: "Tiitan",
-        price: 80,
+        price: 80*80,
         rating: 5,
         numRev: 14,
         stock: 160

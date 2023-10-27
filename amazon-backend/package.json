@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
   "author": "VVB",
   "license": "ISC",
@@ -17,10 +18,12 @@
     "express": "^4.17.1",
     "express-async-handler": "^1.1.4",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.11.9",
-    "nodemon": "^2.0.6"
+    "mongoose": "^5.11.9"
   },
   "engines": {
     "node": "16.x"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
   }
 }

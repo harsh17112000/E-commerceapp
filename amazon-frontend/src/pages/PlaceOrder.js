@@ -97,7 +97,7 @@ const PlaceOrder = (props) => {
                                                     <Link to={`/products/product/${item.product}`}>{item.name}</Link>
                                                 </div>
                                                 
-                                                <p>{item.qty} x ${item.price} = ${item.price*item.qty}</p>
+                                                <p>{item.qty} x ₹{item.price} = ₹{item.price*item.qty}</p>
                                                 
                                             </div>
                                         </li>
@@ -117,19 +117,19 @@ const PlaceOrder = (props) => {
                             </li>
                             <li>
                                 <p>Items</p>
-                                <p>${cart.itemsPrice.toFixed(2)}</p>
+                                <p>₹{cart.itemsPrice.toFixed(2)}</p>
                             </li>
                             <li>
                                 <p>Shipping</p>
-                                <p>${cart.shippingPrice.toFixed(2)}</p>
+                                <p>₹{cart.shippingPrice.toFixed(2)}</p>
                             </li>
                             <li>
                                 <p>Tax</p>
-                                <p>${cart.taxPrice.toFixed(2)}</p>
+                                <p>₹{cart.taxPrice.toFixed(2)}</p>
                             </li>
                             <li>
                                 <p><strong>Total</strong></p>
-                                <p><strong>${cart.totalPrice.toFixed(2)}</strong></p>
+                                <p><strong>₹{cart.totalPrice.toFixed(2)}</strong></p>
                             </li>
 
                             <li>

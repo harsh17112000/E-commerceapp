@@ -120,7 +120,7 @@ const OrderDetails = (props) => {
                                                     <Link to={`/products/product/${item.product}`}>{item.name}</Link>
                                                 </div>
                                                 
-                                                <p>{item.qty} x ${item.price} = ${item.price*item.qty}</p>
+                                                <p>{item.qty} x ₹{item.price} = ₹{item.price*item.qty}</p>
                                                 
                                             </div>
                                         </li>
@@ -140,19 +140,19 @@ const OrderDetails = (props) => {
                             </li>
                             <li>
                                 <p>Items</p>
-                                <p>${order.itemsPrice.toFixed(2)}</p>
+                                <p>₹{order.itemsPrice.toFixed(2)}</p>
                             </li>
                             <li>
                                 <p>Shipping</p>
-                                <p>${order.shippingPrice.toFixed(2)}</p>
+                                <p>₹{order.shippingPrice.toFixed(2)}</p>
                             </li>
                             <li>
                                 <p>Tax</p>
-                                <p>${order.taxPrice.toFixed(2)}</p>
+                                <p>₹{order.taxPrice.toFixed(2)}</p>
                             </li>
                             <li>
                                 <p><strong>Total</strong></p>
-                                <p><strong>${order.totalPrice.toFixed(2)}</strong></p>
+                                <p><strong>₹{order.totalPrice.toFixed(2)}</strong></p>
                             </li>
 
                             <div className="order-page-pay-btn">

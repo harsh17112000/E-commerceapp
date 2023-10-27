@@ -56,7 +56,7 @@ const ProductPage = (props) => {
                                     <Rating rating={product.rating}
                                     numRev={product.numRev} />
                                 </li>
-                                <li className="pd-price">${product.price}</li>
+                                <li className="pd-price">₹{product.price}</li>
                                 <li className="pd-desc">
                                     Description :
                                     <p>{product.description}</p>
@@ -68,7 +68,7 @@ const ProductPage = (props) => {
                                 <ul>
                                     <li>
                                         <p>Total amount</p>
-                                        <div className="price">${product.price*qty}</div>
+                                        <div className="price">₹{product.price*qty}</div>
                                     </li>
                                     <li>
                                         <p>Stock</p>
