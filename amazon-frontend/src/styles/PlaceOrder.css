@@ -1,0 +1,52 @@
+.col-6 ul{
+    list-style-type: none;
+}
+.col-6 ul li{
+    margin-bottom: 20px;
+}
+
+.col-6 .card-body h2 {
+    margin-bottom: 22px;
+}
+
+.col-6 .card-body p{
+    margin-top: 10px;
+}
+
+.order-row1{
+    width: 100%;
+    grid-template-columns: 1fr 2fr 1fr;
+    background-color:white;
+}
+
+.order-row1 p{
+    font-weight: 600;
+    text-align: center;
+    background-color: rgb(238, 238, 238);
+    padding: 16px 6px;
+    border: 1px solid gray
+}
+
+
+
+
+.placeorder-btn {
+    background-color: #f0c040;
+    border: 1px solid #717070; /* Add a 1px black border */
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 30px;
+    font-size: 18px;
+    outline: none;
+    color: #000; /* Set the font color to black */
+    transition: background-color 0.3s, color 0.3s; /* Add a transition effect for color change */
+  }
+  
+  .placeorder-btn:hover {
+    background-color: #d8ab00; /* Change to a darker shade of yellow on hover */
+    color: #000; /* Font color remains black on hover */
+  }

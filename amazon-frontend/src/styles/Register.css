@@ -1,0 +1,12 @@
+.register-container{
+    max-width: 500px;
+    margin: auto;
+    transform: translateY(15%);
+    margin-bottom: 150px;
+}
+
+@media(max-width: 900px){
+    .register-container{
+        transform: translateY(14%);
+    }
+}

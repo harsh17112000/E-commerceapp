@@ -1,0 +1,92 @@
+.home-page-container{
+    max-width: 1600px;
+    margin: auto;
+}
+
+.banner-container{
+    margin-bottom: 40px; 
+}
+.banners{
+    height: 26vw;
+}
+
+.banners img{
+    width: 100%;
+    height: 100%;
+}
+
+.home-product-slider{
+  padding: 20px;
+  padding-bottom: 40px;
+  background-color: rgb(235, 235, 235);
+}
+
+
+.slides .slick-prev,
+.slides .slick-next {
+  top: 50%;
+}
+
+.slick-next{
+  margin-right: 5%;
+}
+
+.slick-prev{
+  margin-left: 5%;
+  z-index: 99;
+}
+
+.slick-slide .product-card{
+  margin: 0 10px;
+  margin-bottom: 30px; 
+}
+
+
+.footer-button {
+  background-color: #555E6E;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+.footer-button:hover {
+  background-color: #353F4E;
+}
+
+.footer {
+  background-color:  #232F3E;
+  padding: 20px;
+  text-align: center;
+  color: #f2f2f2; /* White text color */
+  width: 100%; /* Set the footer width to 100% */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 160px;
+}
+
+.footer h1 {
+  margin: 0;
+  font-size: 24px; /* Adjust font size */
+}
+
+.legal-links {
+  margin-top: 10px;
+}
+
+.legal-links a {
+  text-decoration: none;
+  color: #f2f2f2; /* White text color */
+}
+
+.legal-links a:hover {
+  text-decoration: underline;
+}
+
+.footer p {
+  margin: 10px 0;
+  color: #bbb; /* Lighter text color for copyright notice */
+  font-size: 14px; /* Adjust font size for copyright notice */
+}
