@@ -1,39 +1,67 @@
-.product-card{
+/* Product.css */
+.product-card {
+    width: 220px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 16px;
-    border: 2px solid grey;
+    border: 2px solid #e0e0e0; /* A lighter border color */
     border-radius: 4px;
-    background-color: white;
-}
-
-.product-image{
+    background-color: #fff; /* White background color */
+    transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+  }
+  
+  .product-card:hover {
+    transform: scale(1.05);    
+  }
+  
+  .product-image {
     width: 100%;
     height: 200px;
-    overflow-y: hidden;
-}
-
-.product-image img{
+    overflow: hidden;
+    border-radius: 4px; /* Rounded corners for the image */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  }
+  
+  .product-image img {
     width: 100%;
-}
-.product-card h2{
-    font-size: 26px;
-    margin: 14px 0;
-}
-.product-card p{
-    font-size: 22px;
+    height: 100%;
+    object-fit: cover; /* Keep the image aspect ratio */
+  }
+  
+  .product-card h2 {
+    font-size: 20px; /* Slightly reduce font size */
+    margin: 10px 0;
+    color: #333; /* Darken the text color */
+  }
+
+  .product-card h2:hover {
+    font-size: 20px; /* Slightly reduce font size */
+    margin: 10px 0;
+    color: #e71111; /* Darken the text color */
+  }
+  
+  .product-card p {
+    font-size: 18px; /* Reduce font size */
     font-weight: 600;
     margin: 8px 0;
-}
-
-
-@media(max-width: 900px){
-    .product-image{
-        height: 120px;
+    color: #555; /* Adjust text color */
+  }
+  
+  /* Adjust hover styles for links within the product card */
+  .product-card a:hover {
+    color: #0070f3; /* Change link color on hover */
+    text-decoration: underline; /* Add an underline on hover */
+  }
+  
+  @media (max-width: 900px) {
+    .product-image {
+      height: 120px;
     }
-
-    .product-card{
-        height: 280px;
+  
+    .product-card {
+      height: 280px;
     }
-}
+  }
+  

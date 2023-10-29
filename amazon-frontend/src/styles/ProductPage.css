@@ -1,6 +1,6 @@
 .row{
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: 1.7fr 1.5fr 1fr;
     grid-gap: 40px;
     margin: 30px 20px;
 }
@@ -15,12 +15,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid grey;
+    border: 1px solid #ccc; /* Add a light gray border */
     border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .col-1 img{
     width: 80%;
+    border-radius: 4px;
 }
 
 .col-2 ul, .col-3 ul{
@@ -85,8 +87,9 @@
 }
 
 
-.card-body .add-to-cart{
+.card-body .add-to-cart {
     background-color: #f0c040;
+    border: 1px solid #717070; /* Add a 1px black border */
     border-radius: 4px;
     display: block;
     width: 100%;
@@ -95,8 +98,16 @@
     cursor: pointer;
     margin-top: 30px;
     font-size: 18px;
-    outline: 0;
-}
+    outline: none;
+    color: #000; /* Set the font color to black */
+    transition: background-color 0.3s, color 0.3s; /* Add a transition effect for color change */
+  }
+  
+  .add-to-cart:hover {
+    background-color: #d8ab00; /* Change to a darker shade of yellow on hover */
+    color: #000; /* Font color remains black on hover */
+  }
+  
 
 
 @media(max-width: 900px){

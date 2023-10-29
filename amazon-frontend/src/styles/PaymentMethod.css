@@ -1,7 +1,8 @@
 .pay-method-container{
-    max-width: 600px;
+    max-width: 500px;
     margin: auto;
-    transform: translateY(50%);
+    transform: translateY(15%);
+    margin-bottom: 150px;
 }
 
 .select-method-ip{

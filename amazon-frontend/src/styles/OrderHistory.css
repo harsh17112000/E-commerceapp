@@ -38,17 +38,28 @@
     width: 80%;
     margin: auto;
     padding: 10px;
-    background-color:  #f0c040;
     margin: 20px 0;
     border-radius: 4px;
     cursor: pointer;
+
+    background-color: #f0c040;
+    border: 1px solid #717070; /* Add a 1px black border */
+    text-align: center;
+    margin-top: 30px;
+    font-size: 18px;
+    outline: none;
+    color: #000; /* Set the font color to black */
+    transition: background-color 0.3s, color 0.3s;
 }
+
 
 .order-details-btn > .MuiSvgIcon-root{
     font-size: 22px !important;
     color: rgb(36, 36, 36) ;
     font-size: 18px;
 }
+
+ 
 
 @media(max-width: 900px){
     .orderhistory-container{

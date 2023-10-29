@@ -1,11 +1,14 @@
 .shipping-form-container{
-    max-width: 600px;
+    max-width: 500px;
     margin: auto;
-    transform: translateY(20%);
+    transform: translateY(15%);
+    margin-bottom: 150px;
 }
 
-.continue-btn{
+
+.continue-btn {
     background-color: #f0c040;
+    border: 1px solid #717070; /* Add a 1px black border */
     border-radius: 4px;
     display: block;
     width: 100%;
@@ -14,8 +17,15 @@
     cursor: pointer;
     margin-top: 30px;
     font-size: 18px;
-    outline: 0;
-}
+    outline: none;
+    color: #000; /* Set the font color to black */
+    transition: background-color 0.3s, color 0.3s; /* Add a transition effect for color change */
+  }
+  
+  .continue-btn:hover {
+    background-color: #d8ab00; /* Change to a darker shade of yellow on hover */
+    color: #000; /* Font color remains black on hover */
+  }
 
 @media(max-width: 900px){
     .shipping-form-container{

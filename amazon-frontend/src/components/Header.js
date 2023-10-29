@@ -45,89 +45,90 @@ const Header = (props) => {
     return (
         <header>
             <div className="container">
-                <div className="inner-content">
-                    <div className="brand">
-                        <Link to="/">Amazon Clone</Link>
-                    </div>
-
-                    <div className="search-bar">
-                        <input className="search-input"
-                        onChange={(e)=> setQuery(e.target.value)}
-                        placeholder="Search products"
-                        value={query}>
-                        </input>
-
-                        <div className="search-btn">
-                            <Link to={`/searchresults/${query}`}>
-                                <SearchIcon/>
-                            </Link>
+                    <div className="inner-content">
+                        <div className="brand">
+                            <Link to="/">Amazon Clone</Link>
                         </div>
-                        
-                    </div>
 
-                    <ul className="nav-links">
-                        <li>
-                            <Link to="/cart"><ShoppingCartIcon/>
+                        <div className="search-bar">
+                            <input className="search-input"
+                            onChange={(e)=> setQuery(e.target.value)}
+                            placeholder="Search products"
+                            value={query}>
+                            </input>
+
+                            <div className="search-btn">
+                                <Link to={`/searchresults/${query}`}>
+                                    <SearchIcon/>
+                                </Link>
+                            </div>
+                            
+                        </div>
+
+                        <ul className="nav-links">
+                            <li>
+                                <Link to="/cart"><ShoppingCartIcon/>
+                                    {
+                                        cartItems.length > 0 && 
+                                        (<p className="badge">{cartItems.length}</p>)
+                                    }
+                                </Link>
+                            </li>
+                            <li>
                                 {
-                                    cartItems.length > 0 && 
-                                    (<p className="badge">{cartItems.length}</p>)
-                                }
-                            </Link>
-                        </li>
-                        <li>
-                            {
-                                userInfo ? (
-                                    <div className="header-dropdown">
+                                    userInfo ? (
+                                        <div className="header-dropdown">
+                                            
+                                            <p onClick={showDropDown}>
+                                                {userInfo.name}
+                                                <ArrowDropDownIcon/>
+                                            </p>
+
+                                            <ul className={ dropdown? 'dropdown-content show' : 'dropdown-content'}>
+                                                <li>
+                                                <Link to="/profile">Account</Link> 
+                                                </li>
+                                                <li>
+                                                <Link to="/orderhistory">Order History</Link> 
+                                                </li>
+                                                <li>
+                                                <Link to="/" onClick={signOutHandler}>Sign out</Link> 
+                                                </li>
+                                            </ul>
+                                        </div>
                                         
-                                        <p onClick={showDropDown}>
-                                            {userInfo.name}
+                                    ) :
+                                    (
+                                        <Link to="/signin"><AccountCircleIcon/></Link>
+                                    )
+                                }
+                                
+                            </li>
+
+                            {userInfo && userInfo.isAdmin && (
+                                <li>
+                                    <div className="header-dropdown">
+                                        <p onClick={showSecondDropDown}>
+                                            Admin 
                                             <ArrowDropDownIcon/>
                                         </p>
-
-                                        <ul className={ dropdown? 'dropdown-content show' : 'dropdown-content'}>
+                                
+                                        <ul className={ secondDropdown? 'dropdown-content show' : 'dropdown-content'}>
+                                            
                                             <li>
-                                               <Link to="/profile">Account</Link> 
+                                            <Link to="/productlist">Products</Link> 
                                             </li>
-                                            <li>
-                                               <Link to="/orderhistory">Order History</Link> 
-                                            </li>
-                                            <li>
-                                               <Link to="/" onClick={signOutHandler}>Sign out</Link> 
-                                            </li>
+                                            
                                         </ul>
                                     </div>
-                                    
-                                ) :
-                                (
-                                    <Link to="/signin"><AccountCircleIcon/></Link>
-                                )
-                            }
+                                </li>
+                            )}
                             
-                        </li>
+                                
+                        </ul>
+                    </div>
 
-                        {userInfo && userInfo.isAdmin && (
-                            <li>
-                                <div className="header-dropdown">
-                                    <p onClick={showSecondDropDown}>
-                                        Admin 
-                                        <ArrowDropDownIcon/>
-                                    </p>
-                            
-                                    <ul className={ secondDropdown? 'dropdown-content show' : 'dropdown-content'}>
-                                        
-                                        <li>
-                                           <Link to="/productlist">Products</Link> 
-                                        </li>
-                                          
-                                    </ul>
-                                </div>
-                            </li>
-                        )}
-                        
-                            
-                    </ul>
-                </div>
-
+                
                 <div className="category-container">
                     <ul>
                         <li><Link to="/category/mobile">Mobile</Link></li>

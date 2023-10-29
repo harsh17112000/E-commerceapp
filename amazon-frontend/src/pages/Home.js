@@ -4,6 +4,7 @@ import ProductList from '../components/ProductList';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import Footer from './Footer';
 import "../styles/Home.css"
 import Product from '../components/Product'
 import { listProducts } from '../actions/ProdcutActions'
@@ -65,7 +66,11 @@ const Home = () => {
             },
             
         ]
-    }
+    };
+
+   
+
+
 
     return (
         <div className="home-page-container">
@@ -107,8 +112,16 @@ const Home = () => {
                 </Slider>
             </div>
 
+           
 
-        </div>
+
+      <div className="footer-button" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
+        Back to Top
+      </div>
+
+
+      <Footer />
+    </div>
     )
 }
 
